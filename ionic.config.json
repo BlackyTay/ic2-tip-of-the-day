@@ -1,0 +1,7 @@
+{
+  "name": "ic2-tip-of-the-day",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
