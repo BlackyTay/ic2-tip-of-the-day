@@ -33,3 +33,31 @@ ion-content ion-toolbar {
 .dynamic-color {
   --background: var(--randomcolor);
 }
+
+ion-header {
+  ion-toolbar {
+    ion-title {
+      color: rgba(lighten(green, 2%), 0.8);
+      text-align: center;
+    }
+  }
+}
+
+ion-content {
+  font-family: 'Oxanium' !important;
+  div {
+    ion-card {
+      transition: 0.5s linear !important;
+      // &:hover {
+      //   transform: rotateY(360deg) scale(0)!important;
+      //   // transform: rotateY(360deg) scale(1) !important;
+      // }
+      ion-card-header {
+        ion-card-title {
+          color: rgba(lighten(green, 2%), 0.8);
+          font-weight: bolder;
+        }
+      }
+    }
+  }
+}

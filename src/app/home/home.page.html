@@ -1,19 +1,25 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+    <ion-icon name="leaf" ></ion-icon>
+      Recycle Tip For The Day
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" class="dynamic-color" [style]="randomColor()">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
+<ion-content [fullscreen]="true" class="dynamic-color" [style]="randomColor()" (click)="newTip()">
   <div id="container">
-    <p></p>
+    <ion-card style="padding: 20px; border-radius: 20px;" #tipcard>
+      <ion-card-header>
+        <ion-card-title>Tip for today</ion-card-title>
+        <ion-card-subtitle>{{ date }}</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content >
+      <ion-icon name="leaf" style="color:green"></ion-icon>
+        {{ tip }}
+      <ion-icon name="leaf" style="color:yellowgreen"></ion-icon>
+      </ion-card-content>
+      <ion-card-subtitle style="margin-top: 20px;">-- tap to next tip --</ion-card-subtitle>
+    </ion-card>
   </div>
 </ion-content>
